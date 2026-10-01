@@ -128,4 +128,4 @@ while ((iter <= maxCycle)),
 end % End of ABC
 end; %end of runs
 asd
-save ('abc_d55.mat', 'labc')
+save ('abc_d55.mat', 'abc', 'GlobalMin', 'GlobalParams', 'sequence')

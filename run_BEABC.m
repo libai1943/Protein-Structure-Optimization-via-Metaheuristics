@@ -136,9 +136,9 @@ while ((iter <= maxCycle)),
     trial(ind) = D;
     if (mean(trial) > (D*alpha))
                 pops = pops + 1;
-                sequence = randperm(NP);
-                num = fix(NP*alpha) + 1;
-                list3 = sequence(1:num);
+                food_order = randperm(FoodNumber);
+                num = min(FoodNumber, fix(FoodNumber*alpha) + 1);
+                list3 = food_order(1:num);
                 for ii = 1:num 
                     sol = (ub-lb).*rand(1,D) + lb;
                     ObjValSol = feval(objfun,sol);
